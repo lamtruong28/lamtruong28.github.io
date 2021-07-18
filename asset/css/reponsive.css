@@ -55,10 +55,13 @@
         width: 100%;
     }
 
-    .btn {
-        padding: 16px !important;
+    .btn-send {
+        padding: 16px;
     }
 
+    .item-project a {
+        padding: 12px 0;
+    }
 }
 
 
