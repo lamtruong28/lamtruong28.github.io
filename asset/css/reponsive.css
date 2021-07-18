@@ -16,6 +16,13 @@
         overflow: hidden;
     }
 
+    #slider .slider__greeting {
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
     .nav-lists li {
         display: block;
         border-bottom: 1px solid #333;
