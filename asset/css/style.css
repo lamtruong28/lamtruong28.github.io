@@ -8,6 +8,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -79,6 +80,16 @@ html {
     opacity: 0.75;
     border-radius: 4px;
     text-align: center;
+    animation: hidden-appear ease 0.5s;
+}
+
+@keyframes hidden-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.75;
+    }
 }
 
 /* body */
@@ -144,6 +155,7 @@ html {
     height: 100%;
     width: 100%;
     vertical-align: middle;
+    filter: grayscale(25%);
 }
 
 .item-project .avatar-project {
@@ -177,16 +189,114 @@ html {
     transition: all 0.3s;
 }
 
+/* CSS contact */
 
+.content .info {
+    display: flex;
+    text-align: justify;
+}
 
+.info .info__address {
+    width: 50%;
+    font-size: 18px;
+}
 
+.info .info__address i {
+    padding: 8px;
+}
 
+.info .info__address a:hover {
+    color: rgb(255, 0, 0);
+    transition: all ease .3s;
+}
 
+.info .info__address .icon-mail {
+    margin-left: -4px;
+}
 
+.info .contact-form {
+    width: 50%;
+}
 
+.info .contact-form input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px 8px;
+    font-size: 16px;
+}
 
+.info .contact-form .btn-send {
+    padding: 12px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
 
+.info .contact-form .btn-send:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+}
 
+#footer {
+    padding: 64px 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+#footer .top-up {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+#footer .top-up:hover {
+    background-color: #ccc;
+}
+
+#footer .lists-icon {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.lists-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lists-icon i:hover {
+    transition: ease all .4s;
+}
+
+.lists-icon .twitter:hover,
+.lists-icon .snap:hover,
+.lists-icon .fb:hover {
+    color: rgb(0, 0, 255);
+}
+
+.lists-icon .instagram:hover {
+    color: rgb(208, 255, 0);
+}
+
+.lists-icon .ytb:hover {
+    color: #f00;
+}
+
+#footer .coppyright {
+    color: rgb(0, 0, 255);
+}
+
+#footer .coppyright:hover {
+    color: rgb(0, 255, 21);
+    transition: all ease 0.3s;
+}
 
 
 
