@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+#header:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+#header .header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.header__logo .logo-img {
+    width: 52px;
+    vertical-align: middle;
+}
+
+#header .nav-lists {
+    list-style: none;
+}
+
+.nav-lists li {
+    display: inline-block;
+}
+
+.nav-lists li a {
+    display: block;
+    padding: 14px 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-lists li:hover a {
+    background-color: #ccc;
+    transition: all 0.4s;
+}
+
+/* CSS Slider */
+
+#slider {
+    background: url('../img/slider.jpg') center/cover no-repeat;
+    min-height: 90vh;
+    position: relative;
+}
+
+#slider .slider__greeting {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    margin-left: 64px;
+    padding: 0 16px;
+    font-size: 40px;
+    opacity: 0.75;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* body */
+
+#body {
+    background-color: #f1f1f1;
+}
+
+.body__container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.body__container .content {
+    padding: 64px 0 32px;
+}
+
+.content .heading {
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.content .sub-heading {
+    margin: 15px 0;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.content  .about-me {
+    text-align: justify;
+}
+
+.content .avatar {
+    margin-top: 32px;
+}
+
+.content .avatar__img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* CSS project */
+
+#project {
+    background-color: #333;
+    color: #fff;
+}
+
+.project-lists {
+    display: flex;
+}
+
+.item-project {
+    width: 33.33333%;
+    padding: 8px;
+}
+
+.item-project .item-project__img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item-project .avatar-project {
+    height: 200px;
+}
+
+.item-project .desc-project {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.item-project .title {
+    margin: 10px 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.item-project a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: #000;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.item-project a:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
