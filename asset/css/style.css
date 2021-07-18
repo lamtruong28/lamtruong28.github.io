@@ -21,22 +21,22 @@ html {
     position: fixed;
     z-index: 1;
     opacity: 0.75;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes headerFadeIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 #header:hover {
     opacity: 1;
     transition: all 0.3s;
-}
-
-#header .header__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 16px;
-}
-
-.header__logo .logo-img {
-    width: 52px;
-    vertical-align: middle;
 }
 
 #header .nav-lists {
@@ -58,6 +58,26 @@ html {
 .nav-lists li:hover a {
     background-color: #ccc;
     transition: all 0.4s;
+}
+
+.header__logo {
+    padding-right:24px ;
+}
+
+.header__logo .logo-img {
+    width: 52px;
+    vertical-align: middle;
+}
+
+.menu-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14px 24px;
+    display: none;
+    font-size: 16px;
+    
+
 }
 
 /* CSS Slider */
@@ -102,12 +122,8 @@ html {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 16px;
+    padding: 64px 16px;
     text-align: center;
-}
-
-.body__container .content {
-    padding: 64px 0 32px;
 }
 
 .content .heading {
@@ -298,7 +314,15 @@ html {
     transition: all ease 0.3s;
 }
 
-
+.modal {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    display: none;
+}
 
 
 

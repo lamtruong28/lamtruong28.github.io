@@ -1,0 +1,68 @@
+/* PC */
+@media (min-width: 64em) {
+    
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375) {
+    
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+
+    #header {
+        display: block;
+        overflow: hidden;
+    }
+
+    .nav-lists li {
+        display: block;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-lists li:first-child {
+        display: inline-block;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .project-lists {
+        display: block;
+    }
+
+    .item-project {
+        width: 100%;
+    }
+
+    .item-project .avatar-project {
+        height: auto;
+    }
+    
+    .content .info {
+        display: block;
+    }
+
+    .info .contact-form .btn-send,
+    .info .contact-form,
+    .info .info__address {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 16px !important;
+    }
+
+}
+
+
+
+
+
+

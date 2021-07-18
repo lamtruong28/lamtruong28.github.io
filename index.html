@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/reponsive.css">
     <link rel="stylesheet" href="./asset/Fonts-icon/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <img class="logo-img" src="./asset/img/logo.jpg" alt="Logo">
-                </div>
-                <ul class="nav-lists">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <ul class="nav-lists">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="header__logo">
+                <img class="logo-img" src="./asset/img/logo.jpg" alt="Logo">
+            </div>
+            <div class="menu-mobile">
+                <i class="menu-icon fas fa-bars"></i>
             </div>
         </div>
         <!-- Slider -->
@@ -114,7 +116,7 @@
                                 <input type="text" placeholder="Name" required>
                                 <input type="email" placeholder="Email" required>
                                 <input type="text" placeholder="Message" required>
-                                <button class="btn-send" type="submit">
+                                <button class="btn-send btn" type="submit">
                                     <i class="fas fa-paper-plane"></i>
                                     SEND MASSAGE
                                 </button>
@@ -150,5 +152,9 @@
         </div>
 
     </div>
+
+    <div class="modal"></div>
+
 </body>
+    <script src="./asset/javascript/main.js"></script>
 </html>
